@@ -16,9 +16,14 @@ function TodoList() {
     done:false,
 }]
     return (
-          data.map(todo => (
-                <Todo todoData={todo}/>
+        <div>
+        <h3>TODO LIST:</h3>
+      
+         { data.map( (todo) => (
+                <Todo key={"uni"+todo.id} todoData={todo}/>
           ))
+         }
+          </div>
     )
 }
 export default TodoList;

@@ -8,13 +8,6 @@ let data = {
     done: true,
 };
 
-let data2 = {
-    id:1,
-    name: "My first task",
-    done: false,
-};
-
-
 afterEach(()=>{
     cleanup();
 })
